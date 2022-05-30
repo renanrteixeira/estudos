@@ -1,0 +1,15 @@
+E:\Estudos\CSharp\InputDados\bin\Debug\net6.0\InputDados.exe
+E:\Estudos\CSharp\InputDados\bin\Debug\net6.0\InputDados.deps.json
+E:\Estudos\CSharp\InputDados\bin\Debug\net6.0\InputDados.runtimeconfig.json
+E:\Estudos\CSharp\InputDados\bin\Debug\net6.0\InputDados.dll
+E:\Estudos\CSharp\InputDados\bin\Debug\net6.0\InputDados.pdb
+E:\Estudos\CSharp\InputDados\obj\Debug\net6.0\InputDados.csproj.AssemblyReference.cache
+E:\Estudos\CSharp\InputDados\obj\Debug\net6.0\InputDados.GeneratedMSBuildEditorConfig.editorconfig
+E:\Estudos\CSharp\InputDados\obj\Debug\net6.0\InputDados.AssemblyInfoInputs.cache
+E:\Estudos\CSharp\InputDados\obj\Debug\net6.0\InputDados.AssemblyInfo.cs
+E:\Estudos\CSharp\InputDados\obj\Debug\net6.0\InputDados.csproj.CoreCompileInputs.cache
+E:\Estudos\CSharp\InputDados\obj\Debug\net6.0\InputDados.dll
+E:\Estudos\CSharp\InputDados\obj\Debug\net6.0\refint\InputDados.dll
+E:\Estudos\CSharp\InputDados\obj\Debug\net6.0\InputDados.pdb
+E:\Estudos\CSharp\InputDados\obj\Debug\net6.0\InputDados.genruntimeconfig.cache
+E:\Estudos\CSharp\InputDados\obj\Debug\net6.0\ref\InputDados.dll
