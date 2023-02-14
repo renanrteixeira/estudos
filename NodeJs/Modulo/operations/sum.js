@@ -1,7 +1,7 @@
-let somar = function (a, b) {
+let sum = function (a, b) {
   return a + b;
 };
 
 module.exports = {
-  somar,
+  sum,
 };

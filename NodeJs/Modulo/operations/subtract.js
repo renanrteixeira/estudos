@@ -1,7 +1,7 @@
-let subtrair = function (a, b) {
+let subtract = function (a, b) {
   return a - b;
 };
 
-moedule.exports = {
-  subtrair,
+module.exports = {
+  subtract,
 };
