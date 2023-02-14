@@ -2,10 +2,14 @@
   "name": "modulo",
   "version": "1.0.0",
   "description": "Aprendendo node.js",
-  "main": "calc.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }

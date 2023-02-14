@@ -1,5 +1,11 @@
-const { Person } = require("./person");
+//const { Person } = require("./person");
 
-const person = new Person("Renan");
+//require("./modules/path");
 
-console.log(person.sayMyName());
+//const person = new Person("Renan");
+
+//console.log(person.sayMyName());
+
+//require("./modules/fs");
+
+require("./modules/http");

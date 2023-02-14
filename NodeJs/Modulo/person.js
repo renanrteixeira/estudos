@@ -1,10 +1,10 @@
 class Person {
   constructor(name) {
-    this.name = name;
+    this.Name = name;
   }
 
   sayMyName() {
-    return `Meu nome é ${this.name}`;
+    return `Meu nome é ${this.Name}`;
   }
 }
 
