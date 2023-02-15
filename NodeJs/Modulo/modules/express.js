@@ -4,6 +4,24 @@ const UserModel = require("../src/models/user.model");
 const app = express();
 app.use(express.json());
 
+app.set("view engine", "ejs");
+app.set("views", "src/views");
+
+//middleware
+app.use((req, res, next) => {
+  console.log(req.body);
+  console.log(req.headers["content-type"]);
+
+  next();
+});
+
+app.get("/views/users", async (req, res) => {
+  try {
+    const users = await UserModel.find({});
+    res.render("index", { users });
+  } catch (error) {}
+});
+
 app.get("/users/:id", async (req, res) => {
   try {
     const id = req.params.id;
