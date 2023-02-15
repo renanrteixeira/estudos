@@ -4,31 +4,53 @@ const UserModel = require("../src/models/user.model");
 const app = express();
 app.use(express.json());
 
-app.get("/home", (req, res) => {
-  res.contentType("text/html");
-  res.status(200).send("<h1>Hello world!</h1>");
+app.get("/users/:id", async (req, res) => {
+  try {
+    const id = req.params.id;
+    const user = await UserModel.findById(id);
+    return res.status(200).json(user);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
 });
 
-app.get("/users", (req, res) => {
-  const users = [
-    {
-      dados: [
-        { nome: "Andre", email: "andre@email.com" },
-        { nome: "Lucas", email: "lucas@email.com" },
-        { nome: "Silvio", email: "silvio@email.com" },
-        { nome: "Mara", email: "mara@email.com" },
-      ],
-    },
-    {
-      estados: [
-        { nome: "Bahia", sigla: "BA" },
-        { nome: "São Paulo", sigla: "SP" },
-        { nome: "Paraná", email: "PR" },
-        { nome: "Acre", email: "AC" },
-      ],
-    },
-  ];
-  res.status(200).json(users);
+app.patch("/users/:id", async (req, res) => {
+  try {
+    const id = req.params.id;
+    const user = await UserModel.findByIdAndUpdate(id, req.body, { new: true });
+    res.status(200).json(user);
+  } catch (error) {
+    return res.status(500).send(error.message);
+  }
+});
+
+app.put("/users/:id", async (req, res) => {
+  try {
+    const id = req.params.id;
+    const user = await UserModel.findByIdAndUpdate(id, req.body, { new: true });
+    res.status(200).json(user);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+});
+
+app.delete("/users/:id", async (req, res) => {
+  try {
+    const id = req.params.id;
+    const user = await UserModel.findByIdAndRemove(id);
+    return res.status(200).json(user);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+});
+
+app.get("/users", async (req, res) => {
+  try {
+    const users = await UserModel.find({});
+    res.status(200).json(users);
+  } catch (error) {
+    return res.status(500).send(error.message);
+  }
 });
 
 app.post("/users", async (req, res) => {
