@@ -8,4 +8,12 @@
 
 //require("./modules/fs");
 
-require("./modules/http");
+//require("./modules/http");
+
+const dotenv = require("dotenv");
+const connect = require("./src/database/connect");
+
+dotenv.config();
+connect();
+
+require("./modules/express");
