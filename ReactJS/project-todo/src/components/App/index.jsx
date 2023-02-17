@@ -57,7 +57,7 @@ const App = () => {
   return (
     <Router>
       <div className="container">
-        <Header headerInfo={"Minhas Tarefas"} />
+        <Header headerInfo={"Minhas Tarefas"} headerColor={"#7fff00"} />
         <Route
           path="/"
           exact

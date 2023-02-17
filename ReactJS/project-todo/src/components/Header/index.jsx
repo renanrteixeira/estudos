@@ -1,7 +1,9 @@
 import React from "react";
 
-const Header = ({ headerInfo }) => {
-  return <h1 style={{ color: "#eee" }}>{headerInfo}</h1>;
+export default ({ headerInfo, headerColor }) => {
+  return (
+    <>
+      <h1 style={{ color: `${headerColor}` }}>{headerInfo}</h1>
+    </>
+  );
 };
-
-export default Header;
